@@ -8,6 +8,8 @@
     --logo-color: #000;
 
     --primery-font: Roboto, sans-serif;
+
+    --primery-margin: 30px;
 }
 
 .visually-hidden {
@@ -25,10 +27,11 @@
 }
 
 body {
-    font-family: var(--primery-font);
     color: var(--main-text-color);
-
     background-color: var(--white-color);
+
+    font-family: var(--primery-font);
+    font-style: normal;
 }
 
 h1, 
@@ -50,6 +53,10 @@ ul {
 
     margin: 0;
     padding: 0;
+}
+
+img {
+    display: block;
 }
 
 /* ХЕДЕР */
@@ -87,7 +94,9 @@ ul {
 }
 
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.address-link:hover,
+.address-link:focus {
     color: var(--main-color);
 }
 
@@ -102,8 +111,12 @@ ul {
     color: var(--main-text-color);
 }
 
+.nav-link:hover,
+.nav-link:focus,
 .contact-link:hover,
-.contact-link:focus {
+.contact-link:focus,
+.address-link:hover,
+.address-link:focus {
     color: var(--main-color);
 }
 
@@ -158,11 +171,93 @@ ul {
     background-color: #188CE8;
 }
 
+/* Стилизация преимуществ */
+.advantages-list {
+    display: flex;
+    flex-basis: calc((100% - 3 * var(--primery-margin)) / 4);
+}
+
+.advantages-title {
+    color: var(--hedding-color);
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.advantages-item:not(:last-child) {
+    margin-right: var(--primery-margin);
+}
+
+/* Стилизация наших работ */
+.work-title,
+.team-title {
+    color: var(--hedding-color);
+
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.work-list {
+    display: flex;
+}
+
+.work-item:not(:last-child) {
+    margin-right: var(--primery-margin);
+}
+
+/* Стилизация нашей команды */
+.team-list {
+    display: flex;
+}
+
+.team-item {
+    margin-right: var(--primery-margin);
+}
+
+.member-name {
+    color: var(--hedding-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.member-position {
+    color: var(--main-text-color);
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
 /* ФУТЕР */
 .footer {
     background-color: var(--footer-bg-c);
 }
 
-.address {
+.address-link {
+    color: var(--white-color);
+
     font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.transparent {
+    color: rgba(255, 255, 255, 0.6);;
 }
