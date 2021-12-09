@@ -7,6 +7,8 @@
     --team-section-bg: #F5F4FA;
     --footer-bg-c: #2F303A;
     --logo-color: #000;
+    --header-border-color: #ececec;
+    --portfolio-border-color: #eee;
 
     --primery-font: Roboto, sans-serif;
 
@@ -68,7 +70,7 @@ img {
 }
 
 .header {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--header-border-color);
 }
 
 .header .conteiner {
@@ -203,7 +205,7 @@ img {
 
     background: var(--main-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-color: var(--main-color);
+    border: none;
     border-radius: 4px;
     padding: 10px 32px;
 }
@@ -348,4 +350,88 @@ img {
 
 .transparent {
     color: rgba(255, 255, 255, 0.6);
+}
+
+/* ПОРТФОЛИО */
+.filter-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter-button {
+    color: var(--hedding-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    background-color: var(--team-section-bg);
+    border: none;
+    border-radius: 4px;
+
+    padding: 6px 22px;
+}
+
+.filter-button:hover,
+.filter-button:focus {    
+    color: var(--white-color);
+
+    background: var(--main-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(-1 * var(--primery-margin)) calc(-1 * var(--primery-margin)) 0;
+}
+
+.portfolio-item {
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid var(--portfolio-border-color);
+    flex-basis: calc(100% / 3 - var(--primery-margin));
+    margin: 0 var(--primery-margin) var(--primery-margin) 0;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    border: 1px solid var(--portfolio-border-color);
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-content {
+    padding: 20px 24px;
+
+    background: var(--white-color);
+    /* border: 1px solid #EEEEEE; */
+    box-sizing: border-box;
+}
+
+.work-name {
+    color: var(--hedding-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    margin-bottom: 4px;
+}
+
+.work-kind {
+    color: var(--main-text-color);
+    
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
 }

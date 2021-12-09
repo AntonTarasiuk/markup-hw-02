@@ -13,113 +13,129 @@
 </head>
 <body>
     <!-- ХЕДЕР -->
-    <header>
-        <a href="./index.html"><span>Web</span>Studio</a>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="./contacts.html">Контакты</a></li>
+    <header class="header">
+        <div class="conteiner">
+            <a href="./index.html" class="header-logo"><span class="logo-web">Web</span>Studio</a>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
+                    <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+                    <li class="nav-item"><a href="./contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contact-list">
+                <li class="contact-item">                    
+                    <!-- <svg>
+                        <use href=""></use>
+                    </svg> -->
+                    <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
+                <li class="contact-item">
+                    <!-- <svg>
+                        <use href=""></use>
+                    </svg> -->
+                    <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
 
     <!-- ТЕЛО СТРАНИЦИ -->
     <main>
-        <h1 class="visually-hidden">Портфолио</h1>
-        <section class="potfolio-filters">
-            <h2 class="visually-hidden">Фильтры страницы портфолио</h2>
-            <ul class="filter-list">
-                <li class="filter-item"><button class="filter-button">Все</button></li>
-                <li class="filter-item"><button class="filter-button">Веб-сайты</button></li>
-                <li class="filter-item"><button class="filter-button">Приложения</button></li>
-                <li class="filter-item"><button class="filter-button">Дизайн</button></li>
-                <li class="filter-item"><button class="filter-button">Маркетинг</button></li>
-            </ul>
-        </section>
-        <section class="portfolio-items">
-            <h2 class="visually-hidden">Примеры портфолио</h2>
-            <ul class="portfolio-list">
-                <li class="portfolio-item">
-                    <img src="./images/website-one.jpg" alt="пример работы website" width="370" height="294">
-                    <div>
-                        <h3 class="work-name">Технокряк</h3>
-                        <p class="website-work">Веб-сайт</p>
-                    </div>
-                </li>
-                <li class="portfolio-item">
-                    <img src="./images/design-one.jpg" alt="пример работы design" width="370" height="294">
-                    <div>
-                        <h3 class="work-name">Постер New Orlean vs Golden Star</h3>
-                        <p class="design-work">Дизайн</p>
-                    </div>
-                </li>
-                <li class="portfolio-item">
-                    <img src="./images/app-one.jpg" alt="пример работы app" width="370" height="294">
-                    <div>
-                        <h3 class="work-name">Ресторан Seafood</h3>
-                        <p class="app-work">Приложение</p>
-                    </div>
-                </li>
-                <li class="portfolio-item">
-                    <img src="./images/marketing-one.jpg" alt="пример работы marketing" width="370" height="294">
-                    <div>
-                        <h3 class="work-name">Проект Prime</h3>
-                        <p class="marketing-work">Маркетинг</p>
-                    </div>
-                </li>
-                <li class="portfolio-item">
-                    <img src="./images/app-two.jpg" alt="пример работы app" width="370" height="294">
-                    <div>
-                        <h3 class="work-name">Проект Boxes</h3>
-                        <p class="app-work">Приложение</p>
-                    </div>
-                </li>
-                <li class="portfolio-item">
-                    <img src="./images/website-two.jpg" alt="пример работы website" width="370" height="294">
-                    <div>
-                        <h3 class="work-name">Inspiration has no Borders</h3>
-                        <p class="website-work">Веб-сайт</p>
-                    </div>
-                </li>
-                <li class="portfolio-item">
-                    <img src="./images/design-two.jpg" alt="пример работы design" width="370" height="294">
-                    <div>
-                        <h3 class="work-name">Издание Limited Edition</h3>
-                        <p class="design-work">Дизайн</p>
-                    </div>
-                </li>
-                <li class="portfolio-item">
-                    <img src="./images/marketing-two.jpg" alt="пример работы marketing" width="370" height="294">
-                    <div>
-                        <h3 class="work-name">Проект LAB</h3>
-                        <p class="marketing-work">Маркетинг</p>
-                    </div>
-                </li>
-                <li class="portfolio-item">
-                    <img src="./images/app-three.jpg" alt="пример работы app" width="370" height="294">
-                    <div>
-                        <h3 class="work-name">Growing Business</h3>
-                        <p class="app-work">Приложение</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
+        <div class="conteiner">
+            <h1 class="visually-hidden">Портфолио</h1>
+            <section class="portfolio section">
+                <div class="portfolio-filters">
+                    <h2 class="visually-hidden">Фильтры страницы портфолио</h2>
+                    <ul class="filter-list">
+                        <li class="filter-item"><button class="filter-button">Все</button></li>
+                        <li class="filter-item"><button class="filter-button">Веб-сайты</button></li>
+                        <li class="filter-item"><button class="filter-button">Приложения</button></li>
+                        <li class="filter-item"><button class="filter-button">Дизайн</button></li>
+                        <li class="filter-item"><button class="filter-button">Маркетинг</button></li>
+                    </ul>
+                </div>
+                <div class="portfolio-items">
+                    <h2 class="visually-hidden">Примеры портфолио</h2>
+                    <ul class="portfolio-list">
+                        <li class="portfolio-item">
+                            <img src="./images/website-one.jpg" alt="пример работы website" width="370" height="294">
+                            <div class="portfolio-content">
+                                <h3 class="work-name">Технокряк</h3>
+                                <p class="work-kind website-work">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-item">
+                            <img src="./images/design-one.jpg" alt="пример работы design" width="370" height="294">
+                            <div class="portfolio-content">
+                                <h3 class="work-name">Постер New Orlean vs Golden Star</h3>
+                                <p class="work-kind design-work">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-item">
+                            <img src="./images/app-one.jpg" alt="пример работы app" width="370" height="294">
+                            <div class="portfolio-content">
+                                <h3 class="work-name">Ресторан Seafood</h3>
+                                <p class="work-kind app-work">Приложение</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-item">
+                            <img src="./images/marketing-one.jpg" alt="пример работы marketing" width="370" height="294">
+                            <div class="portfolio-content">
+                                <h3 class="work-name">Проект Prime</h3>
+                                <p class="work-kind marketing-work">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-item">
+                            <img src="./images/app-two.jpg" alt="пример работы app" width="370" height="294">
+                            <div class="portfolio-content">
+                                <h3 class="work-name">Проект Boxes</h3>
+                                <p class="work-kind app-work">Приложение</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-item">
+                            <img src="./images/website-two.jpg" alt="пример работы website" width="370" height="294">
+                            <div class="portfolio-content">
+                                <h3 class="work-name">Inspiration has no Borders</h3>
+                                <p class="work-kind website-work">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-item">
+                            <img src="./images/design-two.jpg" alt="пример работы design" width="370" height="294">
+                            <div class="portfolio-content">
+                                <h3 class="work-name">Издание Limited Edition</h3>
+                                <p class="work-kind design-work">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-item">
+                            <img src="./images/marketing-two.jpg" alt="пример работы marketing" width="370" height="294">
+                            <div class="portfolio-content">
+                                <h3 class="work-name">Проект LAB</h3>
+                                <p class="work-kind marketing-work">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-item">
+                            <img src="./images/app-three.jpg" alt="пример работы app" width="370" height="294">
+                            <div class="portfolio-content">
+                                <h3 class="work-name">Growing Business</h3>
+                                <p class="work-kind app-work">Приложение</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>
-        <a href=""><span>Web</span>Studio</a>
-        <address>
-            <ul>
-                <li><a href="https://goo.gl/maps/7JHSypm4kSmx8eSn9">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="conteiner">
+            <a href="./index.html" class="footer-logo"><span class="logo-web">Web</span>Studio</a>
+            <address class="address">
+                <ul class="address-list">
+                    <li class="address-item"><a class="address-link" href="https://goo.gl/maps/7JHSypm4kSmx8eSn9">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="address-item"><a class="address-link transparent" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="address-item"><a class="address-link transparent" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
-
 </body>
 </html>
