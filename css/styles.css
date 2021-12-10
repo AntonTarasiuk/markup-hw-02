@@ -116,8 +116,8 @@ img {
     margin-right: 50px;
 }
 
-.contact-item:not(:last-child) {
-    margin-right: var(--primery-margin);
+.contact-list {
+    margin-left: auto;
 }
 
 .nav-link,
@@ -129,7 +129,7 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
+    
     padding: 32px 0;
 }
 
@@ -137,12 +137,18 @@ img {
     color: var(--hedding-color);
 }
 
-.contact-link {
-    color: var(--main-text-color);
+.contact-item:not(:last-child) {
+    margin-right: var(--primery-margin);
 }
 
-.contact-list {
-    margin-left: auto;
+.contact-link svg {
+    margin-right: 10px;
+}
+
+.contact-link {
+    color: var(--main-text-color);
+    display: flex;
+    align-items: center;
 }
 
 .nav-link:hover,
@@ -152,6 +158,18 @@ img {
 .address-link:hover,
 .address-link:focus {
     color: var(--main-color);
+}
+
+.smarphone-icon,
+.envelope-icon {
+    fill: var(--main-text-color);
+}
+
+.contact-link:hover .smarphone-icon,
+.contact-link:focus .smarphone-icon,
+.contact-link:hover .envelope-icon,
+.contact-link:focus .envelope-icon {
+    fill: var(--main-color);
 }
 
 /* ГЛАВНЫЙ КОНТЕНТ */
@@ -231,6 +249,13 @@ img {
 
 .advantages-item {
     flex-basis: calc((100% - 3 * var(--primery-margin)) / 4);
+}
+
+.advantages-icon {
+    margin-bottom: var(--primery-margin);
+    background-color:var(--team-section-bg);
+    padding: 25px 100px;
+    border-radius: 4px;
 }
 
 .advantages-title {
